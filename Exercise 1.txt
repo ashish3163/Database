@@ -1,0 +1,151 @@
+Name-Ashish patil 
+
+Seat no- 200240520022
+
+create database exe;
+
+show databases;
+
+use exe;
+
+1>  create table SEMP (EMPNO CHAR(4),
+   EMPNAME CHAR(20),
+   BASIC FLOAT(9,2),
+   DEPTNO CHAR(2),
+   DEPTHEAD CHAR(4));
+
+   desc SEMP;
+
+
+insert into SEMP(EMPNO,EMPNAME,BASIC,DEPTNO,DEPTHEAD)
+
+  values('0001', 'SUNIL', 6000.00, '10','m');
+  
+  
+  insert into SEMP(EMPNO,EMPNAME,BASIC,DEPTNO,DEPTHEAD)
+  
+    values('0002','HIREN', 8000.01, '20','f');
+    
+ insert into SEMP(EMPNO,EMPNAME,BASIC,DEPTNO,DEPTHEAD)
+  
+    values('0003', 'ALI', 4000.02, '10', '0001');
+    
+
+ insert into SEMP(EMPNO,EMPNAME,BASIC,DEPTNO,DEPTHEAD)
+  
+    values('0004','GEORGE', 6000.03,'30','0003');
+    
+  select * from SEMP;
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+2> create table SDEPT(DEPTNO CHAR(2),DEPTNAME CHAR(15));
+  
+  desc SDEPT;
+    
+  insert into SDEPT(DEPTNO,DEPTNAME) 
+  
+    values('10','Development');
+    
+  insert into SDEPT(DEPTNO,DEPTNAME)
+  
+     values('20','Training');
+     
+  select * from SDEPT;
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 3>
+
+ create table S(`S#` char(4),Sname varchar(20),Status int(4),City varchar(20));
+  
+    desc S;
+    
+  insert into S(`S#`,Sname,Status,City) 
+  
+    values('S1','anthony',10,'London');
+    
+     insert into S(`S#`,Sname,Status,City) 
+  
+    values('S2','jack',20,'paris');
+    
+     insert into S(`S#`,Sname,Status,City) 
+  
+    values('S3','sansa',30,'Athens');
+    
+    insert into S(`S#`,Sname,Status,City) 
+  
+    values('S4','dani',40,'London');
+    
+    select * from S;
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+    
+4>    create table P(`P#` char(4),Pname varchar(20),Color varchar(20),Weight int(4),City varchar(20));
+    
+    desc P;
+    
+    insert into P(`P#`,Pname,Color,Weight,City)
+    
+      values('P1','sam','white',12,'London');
+      
+	insert into P(`P#`,Pname,Color,Weight,City)
+    
+      values('P2','jimmy','black',14,'Paris');
+      
+      insert into P(`P#`,Pname,Color,Weight,City)
+    
+      values('P3','sersi','grey',13,'London');
+      
+      select * from P;
+   ------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+    
+ 5>   create table J(`J#` char(4),Jname varchar(20),City varchar(20));
+    
+     desc J;
+    
+    insert into J(`J#`,Jname,City)
+    
+      values('J1','EHome','London');
+      
+      insert into J(`J#`,Jname,City)
+    
+      values('J2','EMail','Athens');
+      
+      insert into J(`J#`,Jname,City)
+    
+      values('J3','Ecom','paris');
+      
+      select * from J;
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+ 5>     create table SPJ(`S#`char(4),`P#` char(4),`J#` char(4),Qty int(4));
+      
+      desc SPJ;
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------    
+
+   6> select * from S;
+     
+   7>   select `S#`,Sname from S;
+     
+   8>  select Pname,Color from P where City='London';
+     
+   9>  select * from S where City='London';
+      
+   10> select * from S where City='paris' or City= 'Athens';
+     
+    11> select * from J where City='Athens';
+    
+    
+      
+    
+    
+    
+    
+   
+   
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    

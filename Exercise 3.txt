@@ -1,0 +1,32 @@
+
+Name- Ashish patil
+
+Id- 200240520022
+ 
+
+show databases;
+
+use exe;
+
+1>select concat (upper(substr(sname,1,1)),lower(substr(sname,2))) from s;
+
+2>select upper (sname) from s;
+
+3>select lower (sname) from s;
+
+4>select lpad (sname,25,'') from s;
+
+5>select replace (sname,'an','ro') from s;
+
+6>select replace(replace(sname,'a','r'),'n','o')as sname from s;
+
+7>select length (sname ) from s;
+
+8>select *from s where soundex(sname)=soundex('sansa');
+
+10>select dayname(curdate());
+
+
+
+
+
